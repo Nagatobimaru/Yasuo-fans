@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import Connection from '../../Connection'
 import {
   CHeader,
   CToggler,
@@ -49,6 +50,7 @@ const TheHeader = () => {
         className="ml-3 d-md-down-none"
         onClick={toggleSidebar}
       />
+      <Connection />
       {/*<CHeaderBrand className="mx-auto d-lg-none" to="/">*/}
       {/*  <CIcon name="logo" height="48" alt="Logo"/>*/}
       {/*</CHeaderBrand>*/}
