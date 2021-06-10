@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@binance-chain/bsc-use-wallet": "^0.8.1",
     "@coreui/chartjs": "^2.0.0",
     "@coreui/coreui": "^3.2.2",
     "@coreui/react": "^3.0.6",

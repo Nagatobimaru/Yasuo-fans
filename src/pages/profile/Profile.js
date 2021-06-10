@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  CCol,
-  CRow,
   CCard,
   CCardBody,
   CCardFooter,
