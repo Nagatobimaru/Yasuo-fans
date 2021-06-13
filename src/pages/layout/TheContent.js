@@ -224,9 +224,20 @@ const TheContent = () => {
             <Redirect from="/" to="/dashboard" />
           </Switch>
         </Suspense>
-        <div className="position-absolute countdown-timer">
-        <p>Public sale countdown</p>
-        <Countdown date={Date.now() + 10000000000} />
+        <div className="countdown-timer">
+          <div class="box">
+            <span className="box-span-1"></span>
+            <span className="box-span-2"></span>
+            <span className="box-span-3"></span>
+            <span className="box-span-4"></span>
+            <div class="content">
+              <div>
+              <p>Public sale countdown <Countdown date={Date.now() + 10000000000} /></p>
+              
+              </div>
+            </div>
+          </div>
+
         </div>
         <video className='videoTag' autoPlay loop muted>
           <source src={nightbringerYasuo} type='video/mp4' />
@@ -235,7 +246,9 @@ const TheContent = () => {
           <canvas id="demo-canvas"></canvas>
           <h1 class="main-title">Connect <span class="thin">Three</span></h1>
         </div> */}
-        
+        <div className="position-absolute update-quoutes">
+          <p>We will update and keep building. Be patience !</p>
+        </div>
       </CContainer>
     </main>
   )
