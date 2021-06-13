@@ -1,28 +1,36 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+//import { useSelector, useDispatch } from 'react-redux'
 import Connection from '../../Connection'
 import {
   CHeader,
-  CToggler} from '@coreui/react'
+  CImg
+} from '@coreui/react'
 
 // routes config
 const TheHeader = () => {
-  const dispatch = useDispatch()
-  const sidebarShow = useSelector(state => state.sidebarShow)
+  // const dispatch = useDispatch()
+  // const sidebarShow = useSelector(state => state.sidebarShow)
 
-  const toggleSidebar = () => {
-    const val = [true, 'responsive'].includes(sidebarShow) ? false : 'responsive'
-    dispatch({type: 'set', sidebarShow: val})
-  }
+  // const toggleSidebar = () => {
+  //   const val = [true, 'responsive'].includes(sidebarShow) ? false : 'responsive'
+  //   dispatch({type: 'set', sidebarShow: val})
+  // }
 
-  const toggleSidebarMobile = () => {
-    const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
-    dispatch({type: 'set', sidebarShow: val})
-  }
+  // const toggleSidebarMobile = () => {
+  //   const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
+  //   dispatch({type: 'set', sidebarShow: val})
+  // }
 
   return (
     <CHeader withSubheader>
-      <CToggler
+      <CImg
+        src="https://i.ibb.co/vqvyhJ3/project-luc.jpg"
+        fluid
+        width="63px"
+        height="63px"
+      />
+      <p className="color-white mt-3 mr-3 ml-3">Yasuo Fans</p>
+      {/* <CToggler
         inHeader
         className="ml-md-3 d-lg-none"
         onClick={toggleSidebarMobile}
@@ -31,7 +39,7 @@ const TheHeader = () => {
         inHeader
         className="ml-3 d-md-down-none"
         onClick={toggleSidebar}
-      />
+      /> */}
       <Connection />
       {/*<CHeaderBrand className="mx-auto d-lg-none" to="/">*/}
       {/*  <CIcon name="logo" height="48" alt="Logo"/>*/}

@@ -2,28 +2,27 @@ import React from 'react'
 
 import {
   TheContent,
-  TheSidebar,
   TheHeader
 } from './index'
 
 const TheLayout = () => {
-//  const dispatch = useDispatch()
-//  const menuBar = useSelector(state => state.menuBar)
-//  const getApplicationData = async () => {
-//    const application = await getApplication();
-//    dispatch({type: 'set', menuBar: application.data.menuBar })
-//  };
-//  useEffect(() => {
-//    getApplicationData()
-//  }, []);
+  //  const dispatch = useDispatch()
+  //  const menuBar = useSelector(state => state.menuBar)
+  //  const getApplicationData = async () => {
+  //    const application = await getApplication();
+  //    dispatch({type: 'set', menuBar: application.data.menuBar })
+  //  };
+  //  useEffect(() => {
+  //    getApplicationData()
+  //  }, []);
 
   return (
     <div className="c-app c-default-layout">
-      <TheSidebar/>
+      {/* <TheSidebar/> */}
       <div className="c-wrapper">
-        <TheHeader/>
+        <TheHeader />
         <div className="c-body">
-          <TheContent/>
+          <TheContent />
         </div>
         {/*<TheFooter/>*/}
       </div>
